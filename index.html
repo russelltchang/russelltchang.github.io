@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    
+<style>
+    * {
+        font-family: Sans-serif;
+    }
+    
+    .about {
+        padding-top: 60px;
+    }
+    
+    .third {
+        padding-top: 50px;
+        padding-bottom: 100px;
+        font-size: 200%;
+    }
+    
+    .portfolio {
+        background-color: lightgrey;
+        text-align: center;
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+    
+    .img-fluid {
+        width: 350px;
+        height: 350px;
+    }
+    
+    .form {
+        background-color: dimgray;
+        padding-top: 60px;
+        padding-bottom: 60px;
+        color: white;
+    }
+    
+    .footer {
+        background-color: #252a30;
+        text-align: center;
+        color: #93a4aa;
+        padding-top: 20px;
+        padding-bottom: 10px;
+    }
+
+    .social {
+        border-radius: 100%;
+        border: 2px solid #FFFFFF;
+        padding: 10px;
+        width: 40px;
+        color: white;
+        margin-right: 5px;
+        margin-left: 5px;
+
+    }
+    
+    .social:hover {
+        color:white;
+        text-decoration: none;
+    }      
+</style>
+
+<script>
+$(document).ready(function (){
+    $("#aboutbutton").click(function() {
+        $('html, body').animate({
+            scrollTop: $(".about").offset().top-90 // -90 to respect padding
+        }, 800);
+    });
+    $("#portfoliobutton").click(function() {
+        $('html, body').animate({
+            scrollTop: $(".portfolio").offset().top-90 
+        }, 800);
+    }); 
+    $("#contactbutton").click(function() {
+        $('html, body').animate({
+            scrollTop: $(".form").offset().top-90
+        }, 800);
+    });
+    $(".column p:nth-child(3)").css("color", "#93a4aa");
+    $(".btn").hover(function() {
+        $(".btn").addClass("animated shake")
+    });
+});
+</script>
+</head>
+
+<body>	
+  <div class="container-fluid">
+    <div class="navbar sticky-top navbar-dark bg-dark">
+      <h5 class="skills" style="color:white">Full-Stack Web Development</h5>
+      <ul>
+	    <li class="d-inline"><button id="aboutbutton" class="btn">About</button></li>
+	    <li class="d-inline"><button id="portfoliobutton" class="btn">Portfolio</button></li>
+	    <li class="d-inline"><button id="contactbutton" class="btn">Contact</button></li>
+      </ul>
+    </div>
+    <div class="about" style="background-color:white">
+      <h2 class="text-center">My Expertise</h2>
+      <h6 class="text-center" style="font-weight:lighter">I've got chops in all phases of the design process.</h6>
+      <div class="row">
+        <div class="col-lg-4 text-center third">
+          <i class="fa fa-lightbulb-o fa-3x" style="color:gold"></i>
+          <p><b>Ideas</b></p>
+          <p style="font-weight:lighter; font-size:50%">I collaborate with clients and peers to nurture and transform ideas into well thought out design specs.</p>
+        </div>
+        <div class="col-lg-4 text-center third">
+          <i class="fa fa-pencil fa-3x" style="color:gold"></i>
+          <p><b>UX/UI</b></p>
+          <p style="font-weight:lighter; font-size:50%">I collaborate with clients and peers to nurture and transform ideas into well thought out design specs.</p>
+        </div>
+        <div class="col-lg-4 text-center third">
+          <i class="fa fa-code fa-3x" style="color:gold"></i>
+            <p><b>Code</b></p>
+            <p style="font-weight:lighter; font-size:50%">I collaborate with clients and peers to nurture and transform ideas into well thought out design specs.</p>
+          </div>
+      </div>
+    </div>
+    <div class="portfolio">
+      <h2>Portfolio</h2>
+      <h6>Want to see more examples? <a href="mailto:russelltchang@gmail.com">E-mail me.</a></h6>
+      <hr width=80%>
+      <div class="row">
+        <div class="col-lg-5 offset-lg-1">
+          <img class="img-fluid img-thumbnail" style="margin-top:50px" src=simon.png>
+        </div>
+        <div class="col-lg-5">
+          <img class="img-fluid img-thumbnail" style="margin-top:50px" src=tictactoe.png>
+        </div>
+        <div class="col-lg-5 offset-lg-1">
+          <img class="img-fluid img-thumbnail" style="margin-top:50px" src=calculator.png>
+        </div>
+        <div class="col-lg-5">
+          <img class="img-fluid img-thumbnail" style="margin-top:50px" src=pomodoro.png>
+        </div>
+        <div class="col-lg-5 offset-lg-1">
+          <img class="img-fluid img-thumbnail" style="margin-top:50px" src=quotes.png>
+        </div>  
+        <div class="col-lg-5">
+          <img class="img-fluid img-thumbnail" style="margin-top:50px" src=wiki.png>
+        </div>
+      </div>
+    </div>
+    <div class="form">
+      <h2 style="text-align: center">Contact Me</h2>
+      <hr width=80%>
+      <form>
+        <div class="form-group row">
+          <div class="col-lg-4 offset-lg-1">  
+            <label for="email">Email address</label>
+            <input type="email" class="form-control" id="email" placeholder="Enter email">
+            <label for="message">Message</label>
+            <textarea class="form-control" id="message" rows="3" placeholder="Enter message"></textarea>         
+            <button type="submit" class="btn btn-primary" style="margin-top:5px">Submit</button>
+          </div>
+          <div class="col-lg-4 offset-lg-2">
+          <p>Want to get in touch with me? Be it to request more info about myself or my experience, to ask for my resume, random questions about the universe and the meaning of life, or even if only for some backpacking suggestions here in stunning Costa Rica... feel free to drop me a line anytime. </p>  
+          </div>
+        </div>
+      </form>
+    </div>
+    <div class="footer">
+      <a href="https://www.linkedin.com" target="_blank" class="social fa fa-linkedin"></a>
+      <a href="https://www.github.com" target="_blank" class="social fa fa-github"></a>
+      <a href="mailto:russelltchang@gmail.com" class="social fa fa-envelope"></a>
+      <h6 style="font-weight:lighter; margin-top:50px">Coded by RTC &copy 2018</h6>
+    </div>
+</div>
+</body>
+</html>
