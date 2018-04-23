@@ -1,5 +1,11 @@
 $(document).ready(function() {
 
+  $("#down").click(function() {
+    $('html, body').animate({
+      scrollTop: $(".portfolio").offset().top 
+    }, 800);
+  }); 
+
   $("#about").click(function() {
     $('html, body').animate({
       scrollTop: $(".about").offset().top-10 // -10 to respect padding
@@ -14,7 +20,7 @@ $(document).ready(function() {
     
   $("#contact").click(function() {
     $('html, body').animate({
-      scrollTop: $(".form").offset().top
+      scrollTop: $(".contact").offset().top
     }, 1000);
   });
     

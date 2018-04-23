@@ -2,9 +2,11 @@
 <html>
 <head>
 <script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl" crossorigin="anonymous"></script>
+<script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
+<script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+<script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="js/index.js"></script>
-
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
 <link rel="stylesheet" href="css/style.css">    
@@ -13,82 +15,52 @@
 <body>	
   <div class="container-fluid">
     <div class="navbar">
-	      <h6 id="about" class="nav">About</h6>
-	      <h6 id="portfolio" class="nav">Portfolio</h6>
-	      <h6 id="contact" class="nav">Contact</h6>
+      <h3 style="font-family: Pacifico">Russell Chang</h3>
+      <div id="navigation">
+        <h6 id="about" class="nav">About</h6>
+        <h6 id="portfolio" class="nav">Portfolio</h6>
+        <h6 id="contact" class="nav">Contact</h6>
+      </div>
     </div>
     <div class="about">
-      <h2 class="text-center">Hi, I'm Russell.</h2>
-      <div class="skills">
-        <div class="row third">
-          <i class="fab fa-html5 fa-10x col-lg-4"></i>
-          <i class="fab fa-js fa-10x col-lg-4"></i>
-          <i class="fab fa-css3-alt fa-10x col-lg-4"></i>
-        </div>
-        <div class="row third">
-          <i class="fab fa-node fa-10x col-lg-4"></i>
-          <i class="fab fa-git fa-10x col-lg-4"></i>
-          <i class="fab fa-php fa-10x col-lg-4"></i>
-        </div>
-        <div class="row third">
-          <i class="fas fa-database fa-10x col-lg-4"></i>
-          <i class="fab fa-wordpress fa-10x col-lg-4"></i>
-          <i class="fab fa-react fa-10x col-lg-4"></i>
-        </div>
-      </div>
+      <code>&ltp&gt Hi, I'm Russell.  I am a self-taught programmer with experience across the stack.  Here's what I've been working on. &lt/p&gt</code><br><br>
+      <button class="btn" id="down">↓</button>
     </div>
     <div class="portfolio">
-      <h2>Portfolio</h2>
-      <hr width=80%>
+      <h2>Projects</h2><hr width=20%>
       <div class="row">
         <div class="col-lg-5 offset-lg-1">
-          <a href="https://codepen.io/rtc-codes/full/MVEMJq/" target="_blank"><img class="img-fluid img-thumbnail" style="margin-top:50px" src=pictures/simon.png></a>
+          <a href="https://codepen.io/russelltchang/full/MVEMJq/" target="_blank"><img class="img-fluid img-thumbnail" style="margin-top:50px" src=pictures/simon.png></a>
         </div>
         <div class="col-lg-5">
-          <a href="https://codepen.io/rtc-codes/full/GxWJXd/" target="_blank"><img class="img-fluid img-thumbnail" style="margin-top:50px" src=pictures/tictactoe.png></a>
+          <a href="https://codepen.io/russelltchang/full/GxWJXd/" target="_blank"><img class="img-fluid img-thumbnail" style="margin-top:50px" src=pictures/tictactoe.png></a>
         </div>
         <div class="col-lg-5 offset-lg-1">
-          <a href="https://codepen.io/rtc-codes/full/mxepbz/" target="_blank"><img class="img-fluid img-thumbnail" style="margin-top:50px" src=pictures/calculator.png></a>
+          <a href="https://codepen.io/russelltchang/full/mxepbz/" target="_blank"><img class="img-fluid img-thumbnail" style="margin-top:50px" src=pictures/calculator.png></a>
         </div>
         <div class="col-lg-5">
-          <a href="https://codepen.io/rtc-codes/full/BrzZLp/" target="_blank"><img class="img-fluid img-thumbnail" style="margin-top:50px" src=pictures/pomodoro.png></a>
+          <a href="https://codepen.io/russelltchang/full/qYBQWv/" target="_blank"><img class="img-fluid img-thumbnail" style="margin-top:50px" src=pictures/leaderboard.png></a> 
         </div>
         <div class="col-lg-5 offset-lg-1">
-          <a href="https://codepen.io/rtc-codes/full/oEmYQY/" target="_blank"><img class="img-fluid img-thumbnail" style="margin-top:50px" src=pictures/quotes.png></a>
+          <a href="https://codepen.io/russelltchang/full/oEmYQY/" target="_blank"><img class="img-fluid img-thumbnail" style="margin-top:50px" src=pictures/quotes.png></a>
         </div>  
         <div class="col-lg-5">
-          <a href="https://codepen.io/rtc-codes/full/rJRGJo/" target="_blank"><img class="img-fluid img-thumbnail" style="margin-top:50px" src=pictures/wiki.png></a>
+          <a href="https://codepen.io/russelltchang/full/rJRGJo/" target="_blank"><img class="img-fluid img-thumbnail" style="margin-top:50px" src=pictures/wiki.png></a>
         </div>
         <div class="col-lg-5 offset-lg-1">
-            <a href="https://lit-headland-86744.herokuapp.com/" target="_blank"><img class="img-fluid img-thumbnail" style="margin-top:50px" src=pictures/urlshortener.png></a>
+          <a href="https://lit-headland-86744.herokuapp.com/" target="_blank"><img class="img-fluid img-thumbnail" style="margin-top:50px" src=pictures/urlshortener.png></a>
         </div>  
         <div class="col-lg-5">
-          <a href="https://codepen.io/rtc-codes/pen/pLMoVM" target="_blank"><img class="img-fluid img-thumbnail" style="margin-top:50px" src=pictures/markdown.png></a>
+          <a href="https://codepen.io/russelltchang/full/BrzZLp/" target="_blank"><img class="img-fluid img-thumbnail" style="margin-top:50px" src=pictures/pomodoro.png></a>
         </div>
       </div>
     </div>
-    <div class="form">
-      <h2 style="text-align: center">Contact Me</h2>
-      <hr width=85% color=white>
-      <form>
-        <div class="form-group row">
-          <div class="col-lg-4 offset-lg-1">  
-            <label for="email">Email address</label>
-            <input type="email" class="form-control" id="email" placeholder="Enter email">
-            <label for="message">Message</label>
-            <textarea class="form-control" id="message" rows="3" placeholder="Enter message"></textarea>         
-            <button type="submit" class="btn btn-primary" style="margin-top:5px">Submit</button>
-          </div>
-          <div class="col-lg-4 offset-lg-2">
-          <p>Want to get in touch with me?  Feel free to drop me a line anytime. </p>  
-          </div>
-        </div>
-      </form>
-    </div>
-    <div class="footer">
-      <a href="https://www.linkedin.com" target="_blank" class="social"><i class="fab fa-linkedin"></i></a>
-      <a href="https://www.github.com" target="_blank" class="social"><i class="fab fa-github"></i></a>
-      <a href="mailto:russelltchang@gmail.com" class="social"><i class="far fa-envelope"></i></a>
+    <div class="contact">
+      <h2 style="text-align: center">Contact</h2><hr width=20%>
+      <a href="mailto:russelltchang@gmail.com"><i class="fas fa-envelope"></i> russelltchang@gmail.com</a><br>
+      <a href="https://codepen.io/russelltchang"><i class="fab fa-codepen"></i>   codepen.io/russelltchang</a><br>
+      <a href="https://github.com/russelltchang"><i class="fab fa-github"></i>   github.com/russelltchang</a><br>
+      <a href="https://linkedin.com/in/russelltchang"><i class="fab fa-linkedin-in"></i>   linkedin.com/russelltchang</a><br>
     </div>
 </div>
 </body>

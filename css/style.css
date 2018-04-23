@@ -4,15 +4,8 @@
   padding: 0;
 }
 
-h2 {
-  font-family: Pacifico;
-}
-
-.navbar {
-  display: flex;
-  align-items: center;
-  justify-content:flex-end;
-  padding-bottom: 60px;
+#navigation {
+  align: right;
 }
 
 .nav {
@@ -20,6 +13,7 @@ h2 {
   margin-top: 25px;
   color: lightgrey;
   cursor: pointer;
+  display: inline;
 }
 
 .nav:hover {
@@ -27,13 +21,10 @@ h2 {
   transition: 0.8s;
 }
 
-.skills {
-  margin-top:50px;
-  margin-bottom:50px;
-}
-
-.third {
-  margin-bottom: 40px;
+.about {
+  background-color: rgb(61, 92, 150);
+  padding: 200px;
+  text-align: center;
 }
 
 .portfolio {
@@ -52,33 +43,14 @@ img {
   height: 350px;
 }
     
-.form {
-  background-color: dimgray;
+.contact {
+  background-color: rgb(247, 247, 247);
   padding-top: 60px;
   padding-bottom: 60px;
-  color: white;
-}
-    
-.footer {
-  background-color: #252a30;
   text-align: center;
-  color: #072f3d;
-  padding-top: 40px;
-  padding-bottom: 40px;
 }
 
-.social {
-  border-radius: 300%;
-  border: 1.5px solid #FFFFFF;
-  padding: 15px;
-  color: white;
-  margin-right: 5px;
-  margin-left: 5px;
+hr {
+  height: 2px;
+  background-color: black
 }
-    
-.social:hover {
-  color:white;
-  text-decoration: none;
-  transition: opacity 0.5s ease;
-  opacity: 0.5;
-}      
