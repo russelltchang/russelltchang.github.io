@@ -1,130 +1,13 @@
 <!DOCTYPE html>
 <html>
 <head>
-
 <script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl" crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="js/index.js"></script>
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    
-<style>
-@import url(https://fonts.googleapis.com/css?family=Pacifico|Open+Sans:300);
-
-.container-fluid {
-  padding: 0;
-}
-
-h2 {
-  font-family: Pacifico;
-}
-
-.navbar {
-  display: flex;
-  align-items: center;
-  justify-content:flex-end;
-  padding-bottom: 60px;
-}
-
-.nav {
-  margin-right: 25px;
-  margin-top: 25px;
-  color: lightgrey;
-  cursor: pointer;
-}
-
-.nav:hover {
-  color:black;
-  transition: 0.8s;
-}
-
-.skills {
-  margin-top:50px;
-  margin-bottom:50px;
-}
-
-.third {
-  margin-bottom: 40px;
-}
-
-.portfolio {
-  background-color: lightgrey;
-  text-align: center;
-  padding-top: 60px;
-  padding-bottom: 60px;
-}
-
-img {
-  cursor: pointer;
-}
-
-.img-fluid {
-  width: 350px;
-  height: 350px;
-}
-    
-.form {
-  background-color: dimgray;
-  padding-top: 60px;
-  padding-bottom: 60px;
-  color: white;
-}
-    
-.footer {
-  background-color: #252a30;
-  text-align: center;
-  color: #072f3d;
-  padding-top: 40px;
-  padding-bottom: 40px;
-}
-
-.social {
-  border-radius: 300%;
-  border: 1.5px solid #FFFFFF;
-  padding: 15px;
-  color: white;
-  margin-right: 5px;
-  margin-left: 5px;
-}
-    
-.social:hover {
-  color:white;
-  text-decoration: none;
-  transition: opacity 0.5s ease;
-  opacity: 0.5;
-}      
-</style>
-
-<script>
-
-var colors = ['orange', 'yellow', 'blue', 'lawngreen', 'purple', 'teal', 'red', 'blue', 'lightblue'];
-
-$(document).ready(function() {
-
-  $("#1").click(function(event) {
-    console.log(event.target.id);
-  });
-
-  $("#about").click(function() {
-    $('html, body').animate({
-      scrollTop: $(".about").offset().top-10 // -10 to respect padding
-    }, 400);
-  });
-    
-  $("#portfolio").click(function() {
-    $('html, body').animate({
-      scrollTop: $(".portfolio").offset().top 
-    }, 800);
-  }); 
-    
-  $("#contact").click(function() {
-    $('html, body').animate({
-      scrollTop: $(".form").offset().top
-    }, 1000);
-  });
-    
-});
-</script>
+<link rel="stylesheet" href="css/style.css">    
 </head>
 
 <body>	
@@ -159,26 +42,29 @@ $(document).ready(function() {
       <hr width=80%>
       <div class="row">
         <div class="col-lg-5 offset-lg-1">
-          <a href="https://codepen.io/rtc-codes/full/MVEMJq/" target="_blank"><img class="img-fluid img-thumbnail" style="margin-top:50px" src=simon.png></a>
+          <a href="https://codepen.io/rtc-codes/full/MVEMJq/" target="_blank"><img class="img-fluid img-thumbnail" style="margin-top:50px" src=pictures/simon.png></a>
         </div>
         <div class="col-lg-5">
-          <a href="https://codepen.io/rtc-codes/full/GxWJXd/" target="_blank"><img class="img-fluid img-thumbnail" style="margin-top:50px" src=tictactoe.png></a>
+          <a href="https://codepen.io/rtc-codes/full/GxWJXd/" target="_blank"><img class="img-fluid img-thumbnail" style="margin-top:50px" src=pictures/tictactoe.png></a>
         </div>
         <div class="col-lg-5 offset-lg-1">
-          <a href="https://codepen.io/rtc-codes/full/mxepbz/" target="_blank"><img class="img-fluid img-thumbnail" style="margin-top:50px" src=calculator.png></a>
+          <a href="https://codepen.io/rtc-codes/full/mxepbz/" target="_blank"><img class="img-fluid img-thumbnail" style="margin-top:50px" src=pictures/calculator.png></a>
         </div>
         <div class="col-lg-5">
-          <a href="https://codepen.io/rtc-codes/full/BrzZLp/" target="_blank"><img class="img-fluid img-thumbnail" style="margin-top:50px" src=pomodoro.png></a>
+          <a href="https://codepen.io/rtc-codes/full/BrzZLp/" target="_blank"><img class="img-fluid img-thumbnail" style="margin-top:50px" src=pictures/pomodoro.png></a>
         </div>
         <div class="col-lg-5 offset-lg-1">
-          <a href="https://codepen.io/rtc-codes/full/oEmYQY/" target="_blank"><img class="img-fluid img-thumbnail" style="margin-top:50px" src=quotes.png></a>
+          <a href="https://codepen.io/rtc-codes/full/oEmYQY/" target="_blank"><img class="img-fluid img-thumbnail" style="margin-top:50px" src=pictures/quotes.png></a>
         </div>  
         <div class="col-lg-5">
-          <a href="https://codepen.io/rtc-codes/full/rJRGJo/" target="_blank"><img class="img-fluid img-thumbnail" style="margin-top:50px" src=wiki.png></a>
+          <a href="https://codepen.io/rtc-codes/full/rJRGJo/" target="_blank"><img class="img-fluid img-thumbnail" style="margin-top:50px" src=pictures/wiki.png></a>
         </div>
         <div class="col-lg-5 offset-lg-1">
-            <a href="https://lit-headland-86744.herokuapp.com/" target="_blank"><img class="img-fluid img-thumbnail" style="margin-top:50px" src=urlshortener.png></a>
-          </div>  
+            <a href="https://lit-headland-86744.herokuapp.com/" target="_blank"><img class="img-fluid img-thumbnail" style="margin-top:50px" src=pictures/urlshortener.png></a>
+        </div>  
+        <div class="col-lg-5">
+          <a href="https://codepen.io/rtc-codes/pen/pLMoVM" target="_blank"><img class="img-fluid img-thumbnail" style="margin-top:50px" src=pictures/markdown.png></a>
+        </div>
       </div>
     </div>
     <div class="form">

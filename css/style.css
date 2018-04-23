@@ -1,0 +1,84 @@
+@import url(https://fonts.googleapis.com/css?family=Pacifico|Open+Sans:300);
+
+.container-fluid {
+  padding: 0;
+}
+
+h2 {
+  font-family: Pacifico;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content:flex-end;
+  padding-bottom: 60px;
+}
+
+.nav {
+  margin-right: 25px;
+  margin-top: 25px;
+  color: lightgrey;
+  cursor: pointer;
+}
+
+.nav:hover {
+  color:black;
+  transition: 0.8s;
+}
+
+.skills {
+  margin-top:50px;
+  margin-bottom:50px;
+}
+
+.third {
+  margin-bottom: 40px;
+}
+
+.portfolio {
+  background-color: lightgrey;
+  text-align: center;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+img {
+  cursor: pointer;
+}
+
+.img-fluid {
+  width: 350px;
+  height: 350px;
+}
+    
+.form {
+  background-color: dimgray;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  color: white;
+}
+    
+.footer {
+  background-color: #252a30;
+  text-align: center;
+  color: #072f3d;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.social {
+  border-radius: 300%;
+  border: 1.5px solid #FFFFFF;
+  padding: 15px;
+  color: white;
+  margin-right: 5px;
+  margin-left: 5px;
+}
+    
+.social:hover {
+  color:white;
+  text-decoration: none;
+  transition: opacity 0.5s ease;
+  opacity: 0.5;
+}      
