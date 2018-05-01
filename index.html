@@ -1,70 +1,88 @@
 <!DOCTYPE html>
 <html>
 <head>
-<script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl" crossorigin="anonymous"></script>
-<script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
-<script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
-<script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script src="js/index.js"></script>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-<link rel="stylesheet" href="css/style.css">    
+  <title>Russell Chang</title>
+  <script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js"   integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl"   crossorigin="anonymous"></script>
+  <script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
+  <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+  <script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <link rel="stylesheet"   href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">    
 </head>
 
 <body>	
   <div class="container-fluid">
-    <div class="navbar">
-      <h3 style="font-family: Pacifico">Russell Chang</h3>
-      <div id="navigation">
-        <h6 id="about" class="nav">About</h6>
-        <h6 id="portfolio" class="nav">Portfolio</h6>
-        <h6 id="contact" class="nav">Contact</h6>
-      </div>
-    </div>
+    <!--About section-->
     <div class="about">
-      <code>&ltp&gt Hi, I'm Russell.  I am a self-taught programmer with experience across the stack.  Here's what I've been working on. &lt/p&gt</code><br><br>
-      <button class="btn" id="down">↓</button>
+      <h1 style="font-family: Pacifico">Russell Chang</h1>
+      <h5>Full-Stack Web Developer</h5>
+      <a href="mailto:russelltchang@gmail.com" class="link"><i class="fas fa-envelope"></i> gmail</a>
+      <span>|</span>
+      <a href="https://codepen.io/russelltchang" class="link"><i class="fab fa-codepen"></i> codepen</a>
+      <span>|</span>
+      <a href="https://github.com/russelltchang" class="link"><i class="fab fa-github"></i> github</a>
+      <span>|</span>
+      <a href="https://linkedin.com/in/russelltchang" class="link"><i class="fab fa-linkedin-in"></i> linkedin</a>
+      <br><br><button class="btn" id="down"><i class="fas fa-arrow-down"></i></button>
     </div>
-    <div class="portfolio">
+    <!--Projects-->
+    <div class="projects">
       <h2>Projects</h2><hr width=20%>
-      <div class="row">
-        <div class="col-lg-5 offset-lg-1">
-          <a href="https://codepen.io/russelltchang/full/ZoLLwN/" target="_blank"><img class="img-fluid img-thumbnail" style="margin-top:50px" src=pictures/gameoflife.png></a>
+      <!-- Container for the image gallery -->
+      <div class="container">
+        <!-- Main images with number text -->
+        <div class="mySlides">
+          <img class="mainImg" src="pictures/gameoflife.png" style="width:70%">
         </div>
-        <div class="col-lg-5">
-          <a href="https://codepen.io/russelltchang/full/MVEMJq/" target="_blank"><img class="img-fluid img-thumbnail" style="margin-top:50px" src=pictures/simon.png></a>
+        <div class="mySlides">
+          <img class="mainImg" src="pictures/simon.png" style="width:70%">
         </div>
-        <div class="col-lg-5 offset-lg-1">
-          <a href="https://codepen.io/russelltchang/full/GxWJXd/" target="_blank"><img class="img-fluid img-thumbnail" style="margin-top:50px" src=pictures/tictactoe.png></a>
+        <div class="mySlides">
+          <img class="mainImg" src="pictures/tictactoe.png" style="width:70%">
         </div>
-        <div class="col-lg-5">
-          <a href="https://codepen.io/russelltchang/full/mxepbz/" target="_blank"><img class="img-fluid img-thumbnail" style="margin-top:50px" src=pictures/calculator.png></a>
+        <div class="mySlides">
+          <img class="mainImg" src="pictures/leaderboard.png" style="width:70%">
         </div>
-        <div class="col-lg-5 offset-lg-1">
-          <a href="https://codepen.io/russelltchang/full/qYBQWv/" target="_blank"><img class="img-fluid img-thumbnail" style="margin-top:50px" src=pictures/leaderboard.png></a> 
+        <div class="mySlides">
+          <img class="mainImg" src="pictures/calculator.png" style="width:70%">
         </div>
-        <div class="col-lg-5">
-          <a href="https://codepen.io/russelltchang/full/oEmYQY/" target="_blank"><img class="img-fluid img-thumbnail" style="margin-top:50px" src=pictures/quotes.png></a>
-        </div>  
-        <div class="col-lg-5 offset-lg-1">
-          <a href="https://codepen.io/russelltchang/full/rJRGJo/" target="_blank"><img class="img-fluid img-thumbnail" style="margin-top:50px" src=pictures/wiki.png></a>
+        <div class="mySlides">
+          <img class="mainImg" src="pictures/urlshortener.png" style="width:70%">
         </div>
-        <div class="col-lg-5">
-          <a href="https://lit-headland-86744.herokuapp.com/" target="_blank"><img class="img-fluid img-thumbnail" style="margin-top:50px" src=pictures/urlshortener.png></a>
-        </div>  
-        <div class="col-lg-5 offset-lg-1">
-          <a href="https://codepen.io/russelltchang/full/BrzZLp/" target="_blank"><img class="img-fluid img-thumbnail" style="margin-top:50px" src=pictures/pomodoro.png></a>
+        <!-- Next and previous buttons -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094</a>
+        <a class="next" onclick="plusSlides(1)">&#10095</a>
+        <!-- Image caption -->
+        <div class="caption-container">
+          <p id="caption"></p>
+        </div>
+        <!-- Thumbnail carousel images -->
+        <div class="row">
+          <div class="column">
+            <img class="demo cursor" src="pictures/gameoflife.png" onclick="currentSlide(1)" alt="Game of Life">
+          </div>
+          <div class="column"> 
+            <img class="demo cursor" src="pictures/simon.png" onclick="currentSlide(2)" alt="Simon">
+          </div>
+          <div class="column">
+            <img class="demo cursor" src="pictures/tictactoe.png" onclick="currentSlide(3)" alt="Tic Tac Toe">
+          </div>
+          <div class="column">
+            <img class="demo cursor" src="pictures/leaderboard.png" onclick="currentSlide(4)" alt="Leaderboard">
+          </div>
+          <div class="column">
+            <img class="demo cursor" src="pictures/calculator.png" onclick="currentSlide(5)" alt="Calculator">
+          </div> 
+          <div class="column">
+            <img class="demo cursor" src="pictures/urlshortener.png" onclick="currentSlide(6)" alt="URL Shortener">
+          </div>
         </div>
       </div>
     </div>
-    <div class="contact">
-      <h2>Contact</h2><hr width=20%>
-      <a href="mailto:russelltchang@gmail.com"><i class="fas fa-envelope"></i> russelltchang@gmail.com</a><br>
-      <a href="https://codepen.io/russelltchang"><i class="fab fa-codepen"></i>   codepen.io/russelltchang</a><br>
-      <a href="https://github.com/russelltchang"><i class="fab fa-github"></i>   github.com/russelltchang</a><br>
-      <a href="https://linkedin.com/in/russelltchang"><i class="fab fa-linkedin-in"></i>   linkedin.com/russelltchang</a><br>
-    </div>
-</div>
+  </div>
+
+  <script src="js/index.js"></script>
 </body>
 </html>
