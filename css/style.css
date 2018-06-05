@@ -12,7 +12,8 @@
   height: 100vh;
   padding-top: 30vh;
   text-align: center;
-  background-color: grey;
+  background-image: url(../pictures/background.jpg);
+  background-position: center center;
 }
 
 .projects {
