@@ -1,9 +1,3 @@
-$("#down").click(function() {
-  $('html, body').animate({
-    scrollTop: $(".projects").offset().top 
-  }, 800);
-}); 
-
 function plusSlides(n) {
   showSlides(slideIndex += n);
 }

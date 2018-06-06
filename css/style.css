@@ -5,7 +5,13 @@
 }
 
 .link {
+  color: pink;
+  transition: color 0.3s ease;
+}
+
+.link:hover {
   color: white;
+  text-decoration: none;
 }
 
 .about {
