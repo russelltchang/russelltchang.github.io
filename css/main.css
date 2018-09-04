@@ -75,8 +75,8 @@ footer {
   transition: color 0.5s ease;
   margin: 1vw; }
   .social:hover {
-    color: #83909d; }
+    color: #a9bcb1; }
 
 #copyright {
   margin-top: 3vh;
-  color: #83909d; }
+  color: white; }
