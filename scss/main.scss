@@ -1,4 +1,5 @@
-@import url(https://fonts.googleapis.com/css?family=Pacifico|Open+Sans:300);
+@import url('https://fonts.googleapis.com/css?family=Coiny|Pacifico');
+
 
 $darkblue: rgba(3, 30, 73, .7);
 
@@ -25,6 +26,7 @@ $darkblue: rgba(3, 30, 73, .7);
     right: 0;
 
     .navItem {
+      font-family: 'Coiny';
       color: white;
       margin-top: 2vh;
       margin-left: 2vw;
@@ -33,9 +35,13 @@ $darkblue: rgba(3, 30, 73, .7);
   }
 
   #title {
-  text-align: center;
-  color: white;
-  font-family: Alegreya Sans,sans-serif
+    text-align: center;
+    color: white;
+    font-family: 'Coiny';
+  }
+
+  h4 {
+    font-family: 'Pacifico';
   }
 
   #down {
@@ -66,7 +72,6 @@ $darkblue: rgba(3, 30, 73, .7);
 
   .row {
     max-width: 100vw;
-    max-height: 50vh;
     margin: 0 auto
   }
 
@@ -97,7 +102,7 @@ footer {
   &:hover {
     color: #83909d;
   }
-  margin: 10px;
+  margin: 1vw;
 }
 
 #copyright {
