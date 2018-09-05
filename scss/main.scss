@@ -1,6 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Coiny|Pacifico');
-
-
+@import url('https://fonts.googleapis.com/css?family=Coiny|Pacifico|Europa');
 $darkblue: rgba(3, 30, 73, .7);
 
 .container-fluid {
@@ -26,6 +24,8 @@ $darkblue: rgba(3, 30, 73, .7);
     right: 0;
 
     .navItem {
+      cursor: pointer;
+      font-size: 2vw;
       font-family: 'Coiny';
       color: white;
       margin-top: 2vh;
@@ -66,8 +66,57 @@ $darkblue: rgba(3, 30, 73, .7);
   }
 }
 
+#about {
+  background-color: white;
+  padding: 5vw;
+  display: flex;
+  justify-content: center;    
+  align-items: center;
+  #headshot {
+    height: auto;
+    width: 30vw;
+    border-radius: 50%;
+    float: left;
+  }
+  #summary {
+    font-family: "Europa", sans-serif; 
+    font-size: 2vw;
+    font-weight: bold;
+    width: 50vw; 
+    text-align: left; 
+    margin-left: 3vw;
+    color: $darkblue;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  #about {
+    display: block;  
+    text-align: center;
+    #headshot {
+      height: 100%;
+      float: none;
+      width: 50vw;
+    }
+    #summary {
+      width: 80vw; 
+      margin: 0 auto;
+      margin-top: 3vh;
+      text-align: center;      
+    }
+  }
+}
+
+.code {
+  border: solid 2px white;
+  border-radius: 50%;
+  background-color: $darkblue;
+  color: white;
+  padding: 5px;
+}
+
 #projects {
-  background-color: #a9bcb1;
+  background-color: lightgrey;
   overflow: auto; 
 
   .row {
@@ -100,7 +149,7 @@ footer {
   color: white;
   transition: color 0.5s ease;
   &:hover {
-    color: #a9bcb1;
+    color: red;
   }
   margin: 1vw;
 }

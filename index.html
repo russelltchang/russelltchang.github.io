@@ -2,6 +2,7 @@
 <html>
 <head>
   <title>Russell Chang</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js"   integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl"   crossorigin="anonymous"></script>
   <script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -17,9 +18,9 @@
     
     <div id="intro">
       <nav class="navbar">
-        <a id="about" class="navItem" href="#">About</a>
-        <a id="work" class="navItem" href="#projects">Work</a>
-        <a id="contact" class="navItem" href="#footer">Contact</a>
+        <a id="anchor1" class="navItem" href="#">About</a>
+        <a id="anchor2" class="navItem" href="#">Work</a>
+        <a id="anchor3" class="navItem" href="#">Contact</a>
       </nav>
       <div id="title">
         <h1>RUSSELL CHANG</h1>
@@ -28,9 +29,16 @@
       </div>
     </div>
 
+    <div id="about">
+      <img id="headshot" src="pictures/headshot.jpg">
+      <p id="summary">Hi, I'm Russell. Since building my first website in 2010, I've extended my skillset through sites like freeCodeCamp, Codecademy, and Udacity. I've built several web applications using React, Node.js, Express, MongoDB, jQuery and vanilla JavaScript.<br><br> My goal is to become a Fullstack Engineer and create technology-based solutions to solve real world challenges. </p>
+    </div>
+
     <div id="projects">
       <div class="row">
         <div class="col-sm-5 offset-sm-1">
+
+
           <a href="https://mighty-retreat-37311.herokuapp.com/" target="_blank"><img class="img-thumbnail" src="pictures/votenow.png"></a>
         </div>
         <div class="col-sm-5">
