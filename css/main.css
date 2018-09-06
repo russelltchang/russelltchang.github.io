@@ -101,12 +101,36 @@
   #projects .col-sm-5 {
     margin-top: 5vh;
     margin-bottom: 5vh; }
-  #projects img {
-    height: 100%;
-    width: 100%;
-    transition: opacity 0.5s ease; }
-    #projects img:hover {
-      opacity: 0.5; }
+  #projects .container {
+    padding: 0; }
+  #projects .container a {
+    display: flex;
+    justify-content: center;
+    max-height: 50vh;
+    transition: opacity 0.5s; }
+  #projects .container a:hover {
+    opacity: 0.5;
+    transition: all .35 ease; }
+  #projects .container a::after {
+    font-family: 'FontAwesome';
+    content: '\f121';
+    font-size: 3vw;
+    position: absolute;
+    opacity: 0;
+    top: 70%;
+    transition: all .35s;
+    color: white;
+    background: #082b63;
+    border-radius: 50%;
+    border: 3px solid white; }
+  #projects .container a:hover::after {
+    color: white;
+    background: #082b63;
+    border: 3px solid white;
+    opacity: 1;
+    top: 35%;
+    border-radius: 50%;
+    padding: 1vw; }
 
 footer {
   background-color: rgba(3, 30, 73, 0.7);

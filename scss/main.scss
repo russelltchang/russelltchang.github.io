@@ -129,14 +129,49 @@ $darkblue: rgba(3, 30, 73, .7);
     margin-bottom: 5vh;
   }
 
-  img {
-    height: 100%;
-    width: 100%;
-    transition: opacity 0.5s ease;
-    &:hover {
-      opacity: 0.5;
-    }
+  .container {
+    padding: 0;
   }
+
+  .container a {
+    display: flex;
+    justify-content: center;  
+    max-height: 50vh;
+    transition: opacity 0.5s;
+  }
+
+  .container a:hover {
+    opacity: 0.5;
+    transition: all .35 ease;
+  }
+  
+  .container a::after {
+    font-family: 'FontAwesome';
+    content: '\f121';
+    font-size: 3vw;
+    position: absolute;
+    opacity: 0;
+    top: 70%;
+    transition: all .35s;
+    color: white;
+    background: rgba(8, 43, 99, 1);
+    border-radius: 50%;
+    border: 3px solid white;
+  }
+
+  .container a:hover::after {
+    color: white;
+    background: rgba(8, 43, 99,1);
+    border: 3px solid white;
+    opacity: 1;
+    top: 35%;
+    border-radius: 50%;
+    padding: 1vw;
+  }
+}
+
+@media screen and (max-width: 500px) {
+
 }
 
 footer {
