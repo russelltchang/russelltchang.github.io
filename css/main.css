@@ -64,9 +64,9 @@
     float: left;
     opacity: 0; }
   #about .animateImage {
-    animation: slidein 1s ease-in;
+    animation: slidein 0.5s ease-in;
     animation-fill-mode: forwards;
-    animation-delay: 0.8s; }
+    animation-delay: 0.5s; }
 
 @keyframes slidein {
   0% {
@@ -85,7 +85,7 @@
     color: rgba(3, 30, 73, 0.7);
     opacity: 0; }
   #about .animate {
-    animation: fadein 1s ease-in;
+    animation: fadein 0.5s ease-in;
     animation-fill-mode: forwards; }
 
 @keyframes fadein {
