@@ -150,6 +150,12 @@
     border-radius: 50%;
     padding: 1vw; }
 
+@media screen and (max-width: 500px) {
+  .container a::after {
+    font-size: 10vw !important; }
+  .container a:hover::after {
+    font-size: 10vw !important; } }
+
 footer {
   background-color: rgba(3, 30, 73, 0.7);
   text-align: center;

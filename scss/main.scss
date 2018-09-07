@@ -196,7 +196,13 @@ $darkblue: rgba(3, 30, 73, .7);
 }
 
 @media screen and (max-width: 500px) {
+  .container a::after {
+    font-size: 10vw !important;
+  }
 
+  .container a:hover::after {
+    font-size: 10vw !important;
+  }
 }
 
 footer {
