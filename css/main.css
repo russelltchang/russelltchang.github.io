@@ -125,6 +125,7 @@
     display: flex;
     justify-content: center;
     max-height: 50vh;
+    min-height: 50vh;
     transition: opacity 0.5s; }
   #projects .container a:hover {
     opacity: 0.5;
