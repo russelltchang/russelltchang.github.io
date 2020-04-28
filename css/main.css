@@ -164,10 +164,8 @@ footer {
 
 .social {
   color: white;
-  transition: color 0.5s ease;
-  margin: 1vw; }
-  .social:hover {
-    color: darkslateblue; }
+  margin: 1vw; 
+}
 
 #copyright {
   margin-top: 3vh;
