@@ -212,7 +212,7 @@ footer {
   padding: 5vh;
 }
 
-.social {
+.social, .social:hover, .social:active, .social:visited {
   color: white;
   margin: 1vw;
 }
