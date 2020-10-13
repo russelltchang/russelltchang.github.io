@@ -22,7 +22,7 @@
     #intro nav .navItem {
       cursor: pointer;
       font-size: 2vw;
-      font-family: 'Coiny';
+      font-family: 'Europa';
       color: white;
       margin-top: 2vh;
       margin-left: 2vw;
@@ -30,9 +30,9 @@
   #intro #title {
     text-align: center;
     color: white;
-    font-family: 'Coiny'; }
+    font-family: 'Europa'; }
   #intro h4 {
-    font-family: 'Pacifico'; }
+    font-family: 'Europa'; }
   #intro #down {
     color: white;
     position: absolute;
