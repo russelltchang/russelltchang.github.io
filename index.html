@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-128937612-2"></script>
+  <script async class="content-image" src="https://www.googletagmanager.com/gtag/js?id=UA-128937612-2"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
@@ -13,10 +13,9 @@
     gtag('config', 'UA-128937612-2');
   </script>
 
-  <script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js"   integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl"   crossorigin="anonymous"></script>
-  <script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <link rel="stylesheet"   href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- <script class="content-image" src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script> -->
+  <script class="content-image" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <link rel="stylesheet"   href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
   <link rel="stylesheet" href="css/main.css">    
   <link rel="shortcut icon" type="image/x-icon" href="favicon.ico"/>
@@ -25,75 +24,206 @@
 
 <body>	
   <div class="container-fluid">
-    
-    <div id="intro">
-      <nav class="navbar">
-        <a id="anchor1" class="navItem" href="#">About</a>
-        <a id="anchor2" class="navItem" href="#">Work</a>
-        <a id="anchor3" class="navItem" href="#">Contact</a>
+
+    <div id="navbar">
+      <nav>
+        <div id="logoContainer">
+          <a id="logo" href="/"></a>
+          <span id="logoText">RC</span>
+        </div>
+        <div id="navItems">
+          <a id="anchor1" class="navItem" href="#">Projects</a>
+          <a id="anchor2" class="navItem" href="#">Contact</a>
+        </div>
       </nav>
-      <div id="title">
-        <h1>RUSSELL CHANG</h1>
-        <a href="#projects" id="down"><i class="arrow fa-2x fas fa-angle-down "></i></a>
-      </div>
     </div>
 
     <div id="about">
-      <img id="headshot" src="pictures/headshot.jpg">
-      <p id="summary">Hi, I'm Russell. I'm a self-taught developer with experience building web applications using React, Node.js, Express, and MongoDB.  View my resume  <a href="Resume.pdf" target="_blank"><i style="color:rgba(3, 30, 73, .7);" class="far fa-file-alt"></i></a>.</p>
+      <div>
+        <h1 class="header">ABOUT</h1>
+      </div>
+      <img id="headshot" class="content-image" src="pictures/headshot.jpg">
+      <p id="summary">
+        Hi, I'm Russell. I'm a self-taught developer based in Los Angeles, CA.  
+        <br></br>
+        My 3 years of professional experience in real estate includes not only client facing work, but also writing and designing software, training personnel on software, and providing technical support.
+        <br></br>
+        I'm currently seeking a role where I can take on collaborative team responsibilities and gain experience delivering scalable and maintainable software solutions.  
+        <br></br>
+        <a id="resume" href="Resume.pdf" target="_blank">
+          <span style="margin-right: 5px"><b>View Resume</b> </span>
+          <i class="fa fa-long-arrow-right"></i>
+        </a>
+      </p>
     </div>
 
     <div id="projects">
+      <div>
+        <h1 class="header">PROJECTS</h1>
+      </div>
       <div class="row">
-        <div class="col-sm-5 offset-sm-1">
-          <div class="container">
-            <a href="https://directoree.herokuapp.com/" target="_blank"><img class="img-thumbnail" src="pictures/directoree.png"></a>
-          </div>
+        <div class="project">
+          <a href="https://mighty-retreat-37311.herokuapp.com/" target="_blank">
+            <div class="bar">
+              <i class="red"></i>
+              <i class="yellow"></i>
+              <i class="green"></i>
+              <p>VOTENOW</p>
+            </div>
+            <div class="content-overlay"></div>
+            <img class="content-image" src="pictures/votenow.png">
+            <div class="content-details fadeIn-top">
+              <h3>Social Voting Application</h3>
+              <hr style="border-color: white"/>
+              <p>React</p>
+              <p>Express</p>
+              <p>Node</p>
+              <p>MongoDB</p>
+              <p>React Router</p>
+              <p>Passport</p>
+              <p>Chart.js</p>
+              <p>Webpack</p>
+              <p>Axios</p>
+            </div>
+          </a>
         </div>
-        <div class="col-sm-5">
-          <div class="container">
-            <a href="https://evening-tundra-91223.herokuapp.com/" target="_blank"><img class="img-thumbnail" src="pictures/pinterest.png"></a>
-          </div>
+        <div class="project">
+          <a href="https://evening-tundra-91223.herokuapp.com/" target="_blank">
+            <div class="bar">
+                <i class="red"></i>
+                <i class="yellow"></i>
+                <i class="green"></i>
+                <p>PINTEREST CLONE</p>
+            </div>
+            <div class="content-overlay"></div>
+            <img class="content-image" src="pictures/pinterest.png">
+            <div class="content-details fadeIn-top">
+              <h3>Pinterest Clone</h3>
+              <hr style="border-color: white"/>
+              <p>React</p>
+              <p>Express</p>
+              <p>Node</p>
+              <p>MongoDB</p>
+              <p>React Router</p>
+              <p>Passport</p>
+              <p>Webpack</p>
+              <p>Material UI</p>
+            </div>
+          </a>
         </div>
       </div>
 
       <div class="row">
-        <div class="col-sm-5 offset-sm-1">
-          <div class="container">
-            <a href="https://codepen.io/russelltchang/full/MVEMJq/" target="_blank"><img class="img-thumbnail" src="pictures/simon.png"></a>
-          </div>
+        <div class="project">
+          <a href="https://directoree.herokuapp.com/" target="_blank">
+            <div class="bar">
+              <i class="red"></i>
+              <i class="yellow"></i>
+              <i class="green"></i>
+              <p>DIRECTOREE</p>
+            </div>
+            <div class="content-overlay"></div>
+            <img class="content-image" src="pictures/directoree.png">
+            <div class="content-details fadeIn-top">
+              <h3>Directory of Top Film Directors</h3>
+              <hr style="border-color: white"/>
+              <p>React</p>
+              <p>Node</p>
+              <p>Express</p>
+              <p>Webpack</p>
+              <p>Material UI</p>
+            </div>
+          </a>
         </div>
-        <div class="col-sm-5">
-          <div class="container">
-            <a href="https://mighty-retreat-37311.herokuapp.com/" target="_blank"><img class="img-thumbnail" src="pictures/votenow.png"></a>
-          </div>
+        <div class="project">
+          <a href="https://codepen.io/russelltchang/full/MVEMJq/" target="_blank">
+            <div class="bar">
+                <i class="red"></i>
+                <i class="yellow"></i>
+                <i class="green"></i>
+                <p>SIMON</p>
+            </div>
+            <div class="content-overlay"></div>
+            <img class="content-image" src="pictures/simon.png">
+            <div class="content-details fadeIn-top">
+              <h3>Simon Game</h3>
+              <hr style="border-color: white"/>
+              <p>HTML</p>
+              <p>CSS</p>
+              <p>Javascript</p>
+            </div>
+          </a>
         </div>
       </div> 
 
       <div class="row">
-        <div class="col-sm-5 offset-sm-1">
-          <div class="container">
-            <a href="https://codepen.io/russelltchang/full/BrzZLp/" target="_blank"><img class="img-thumbnail" src="pictures/pomodoro.png"></a>
-          </div>
+        <div class="project">
+          <a href="https://codepen.io/russelltchang/full/BrzZLp/" target="_blank">
+            <div class="bar">
+              <i class="red"></i>
+              <i class="yellow"></i>
+              <i class="green"></i>
+              <p>POMODORO</p>
+            </div>
+            <div class="content-overlay"></div>
+            <img class="content-image" src="pictures/pomodoro.png">
+            <div class="content-details fadeIn-top">
+              <h3>Pomodoro Clock</h3>
+              <hr style="border-color: white"/>
+              <p>HTML</p>
+              <p>CSS</p>
+              <p>jQuery</p>
+            </div>
+          </a>
         </div>
-        <div class="col-sm-5">
-          <div class="container">
-            <a href="https://codepen.io/russelltchang/full/rJRGJo/" target="_blank"><img class="img-thumbnail" src="pictures/wiki.png"></a>
-          </div>
+        <div class="project">
+          <a href="https://codepen.io/russelltchang/full/rJRGJo/" target="_blank">
+            <div class="bar">
+              <i class="red"></i>
+              <i class="yellow"></i>
+              <i class="green"></i>
+              <p>WIKI CLONE</p>
+            </div>
+            <div class="content-overlay"></div>
+            <img class="content-image" src="pictures/wiki.png">
+            <div class="content-details fadeIn-top">
+              <h3>Wikipedia Clone</h3>
+              <hr style="border-color: white"/>
+              <p>HTML</p>
+              <p>CSS</p>
+              <p>jQuery</p>
+              <p>Bootstrap</p>
+              <p>AJAX</p>
+            </div>
+          </a>
         </div>
       </div>
     </div>
 
+    <hr style="padding: none"/>
+    <div id="contact">
+      <div id="contactMessage">
+        <h2>Want to get in touch?</h2>
+      </div>
+      <a id="emailButton" href="mailto:russelltchang@gmail.com">
+        <span style="margin-right: 5px"><b>Email Me</b></span>
+        <i class="fa fa-long-arrow-right"></i>
+      </a>
+    </div>
+    <hr style="padding: none"/>
+
     <footer id="footer">
-        <a href="mailto:russelltchang@gmail.com" class="social" target="_blank"><i class="fas fa-2x fa-envelope"></i></a>
-        <a href="https://github.com/russelltchang" class="social" target="_blank"><i class="fab fa-2x fa-github"></i></a>
-        <a href="https://linkedin.com/in/russelltchang" class="social" target="_blank"><i class="fab fa-2x fa-linkedin-in"></i></a>
-        <a href="https://codepen.io/russelltchang/pens/public/" class="social" target="_blank"><i class="fab fa-2x fa-codepen"></i></a>
+      <div id="icons">
+        <a href="https://linkedin.com/in/russelltchang" class="social" target="_blank"><i class="fa fa-lg fa-linkedin-square"  aria-hidden="true"></i></a>
+        <a href="https://github.com/russelltchang" class="social" target="_blank"><i class="fa fa-lg  fa-github"></i></a>
+      </div>
+      <div>
         <h6 id="copyright">Russell Chang &copy; 2020</h6>
+      </div>
     </footer>
 
   </div>
 
-  <script src="js/index.js"></script>
+  <script class="content-image" src="js/index.js"></script>
 </body>
 </html>
